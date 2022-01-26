@@ -1,0 +1,93 @@
+@media (max-width: 800px),
+(max-height: 500px) {
+  .main {
+    margin: 1vh 2vw auto;
+    min-width: 90vw;
+  }
+}
+
+@media (min-width: 801px) and (min-height: 501px) {
+  body {
+    margin: 5% auto auto;
+    justify-content: center;
+    /* min-height: 50vh; */
+  }
+  .main {
+    width: 80vw;
+  }
+}
+
+body {
+  background-color: rgb(245, 239, 239);
+  font-weight: bold;
+  font-size: 20px;
+  display: grid;
+  justify-content: center;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-gap: 10px;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.messageDiv p {
+  background-color: blue;
+}
+
+.selectDiv p {
+  background-color: blue;
+}
+
+.scoreTitle p,
+.scoreDiv p {
+  background-color: #0097A7;
+}
+
+.optionDiv,
+.messageDiv,
+.scoreTitle,
+.scoreDiv,
+.selectDiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  grid-gap: 10px;
+}
+
+.optionDiv {
+  min-height: 70px;
+}
+
+.scoreTitle,
+.scoreDiv,
+.selectDiv {
+  min-height: 50px;
+}
+
+button {
+  color: white;
+  background-color: rebeccapurple;
+  border: none;
+  display: inline-block;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+button:focus-visible {
+  margin: 2pt;
+  outline-width: 0px;
+  box-shadow: 0 0 0 1.5pt black;
+  background-color: rgb(86, 36, 136);
+}
