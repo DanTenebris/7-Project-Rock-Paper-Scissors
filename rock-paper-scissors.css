@@ -1,12 +1,12 @@
-@media (max-width: 800px),
-(max-height: 500px) {
+@media only screen and (max-width: 800px),
+only screen and (max-height: 500px) {
   .main {
     margin: 1vh 2vw auto;
     min-width: 90vw;
   }
 }
 
-@media (min-width: 801px) and (min-height: 501px) {
+@media only screen and (min-width: 801px) and (min-height: 501px) {
   body {
     margin: 5% auto auto;
     justify-content: center;
